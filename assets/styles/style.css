@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.show_case {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Captions */
+.caption_container {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s ease-in-out;
+}
+
+.caption_container > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.caption_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: blur(25px);
+    transform: scale(1.1);
+    z-index: -1;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+/* Pictures */
+.picture_container {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.picture_container > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+/* Buttons */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.arrow_button .fas {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    background: #fff;
+    font-size: 22px;
+    color: #aaa;
+}
+
+.arrow_button .fa-arrow-up {
+    transform: translate(-51px, -30px);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.arrow_button .fa-arrow-down {
+    transform: translate(0, 20px);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.fas:hover {
+    color: #333;
+}
+
+.fas:active {
+    background: #ddd;
+}
